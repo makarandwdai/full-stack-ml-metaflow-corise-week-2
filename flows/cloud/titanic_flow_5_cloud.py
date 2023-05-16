@@ -46,7 +46,7 @@ class TFlow5(FlowSpec):
         self.grid_points = np.arange(1, 9)
 
         self.next(self.model3, foreach='grid_points')
-        
+
     @kubernetes
     @step
     def model3(self):
